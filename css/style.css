@@ -1,0 +1,741 @@
+video{
+    background-repeat: repeat fixed center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.8;
+}
+
+
+/*  Header */
+
+.navbar-inverse{
+  background-color: rgba(0,0,0,0);
+  border: 0;
+}
+.navbar-header{
+  padding: 20px;
+}
+.navbar-header img{
+  width: 180px;
+}
+.navbar-nav{
+  margin-top: 0px;
+}
+.navbar-nav:hover{
+  margin-top: 0px;
+  background-color: rgba(0,0,0,0);
+}
+.navheaderCollapse li{
+  color: #fff;
+  width: 130px;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.navheaderCollapse{
+  padding-top: 60px;
+  margin-right:  80px;
+}
+.navbar-nav a{
+  color: #fff;
+  border-top: 7px solid black;
+
+}
+.navheaderCollapse li:hover{
+  background-color: rgba(0,0,0,0);
+
+}
+.navbar-toggle span{
+  color: gray;
+}
+.navbar-nav a:hover{
+  border-top: 7px solid white;
+  background-color: rgba(0,0,0,0);
+}
+.navbar-inverse .navbar-nav >.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navheaderCollapse>.active>a:hover {
+    background-color: rgba(0,0,0,0);
+    border-top: 7px solid white;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+   background-color: rgba(0,0,0,0);
+}
+.navbar-toggle{
+  border: 1px solid gray;
+}
+
+
+@media screen and (max-width: 768px){ /* col-xs */
+  .navbar-header img{
+    width: 100px;
+  }
+  .navheaderCollapse li{
+    width: 100%;
+  }
+  .navbar-right{
+    background-color:rgba(192,192,192,0.3);
+  }
+  .navbar-header{
+    padding: 5px;
+  }
+
+}
+@media screen and (min-width: 768px){ /* col-sm */
+  .navbar-nav{
+    margin-right: 10px;
+  }
+  .container-fluid{
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 992px){ /* col-md */
+  .navbar-nav{
+    margin-right: 50px;
+  }
+  .container-fluid{
+    margin-left: 50px;
+  }
+  .our-company-li li{
+    width: 130px;
+  }
+}
+@media screen and (min-width: 1200px){ /* col-lg */
+
+}
+
+
+/*  Header */
+
+
+
+
+
+
+/* Our company */
+
+.about-us{
+    color: #fff;
+    font-family: Century Gothic, Arial;
+    font-style: italic;
+}
+.about-us h3{
+    font-weight: bold;
+}
+.about-us-logo-text{
+    color: #fff;
+    font-family: Century Gothic, Arial;
+    font-style: italic;
+}
+@media screen and (min-width: 1200px){ /* col-lg */
+    .about-us h3{
+        font-size: 30px;
+    }
+    .about-us p{
+        font-size: 18px;
+    }
+    .about-us-logo-text p{
+        font-size: 18px;
+    }
+    .about-us{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 768px){ /* col-xs */
+    .about-us-logo img{
+        width: 30%;
+    }
+}
+
+
+.contact-logo{
+    padding-top: 20%;
+    width: 70%;
+    height: 50%;
+}
+
+/* Our company */
+
+
+/* Contact us */
+
+.contact-us , .contact-form-1-text , .contact-form-1, .about-us{
+    color: #fff;
+    font-family: Century Gothic, Arial;
+    font-style: italic;
+}
+.contact-us h3{
+    font-weight: bold;
+}
+.contact-us p{
+    padding-left: 3%;
+}
+.contact-form-1-text h4{
+    font-weight: bold;
+}
+.contact-form-1 h4{
+  color: #f2e713;
+  font-weight: bold;
+}
+.contact-form-1 .form button{
+  border-color: black;
+  min-width: 130px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  background-color: #f2e713;  
+}
+#message{
+  height: 90px;
+}
+.join-us{
+    padding-top: 5%;
+}
+.join-us-option{
+    padding-top: 20%;
+}
+.join-us-option p{
+    color: #fff;
+    font-family: Century Gothic, Arial;
+    font-style: italic;
+    opacity: 0.7;
+    padding: 20px 0 20px 0;
+    background: black;
+}
+
+
+@media screen and (min-width: 1200px){ /* col-lg */
+    .contact-us h3{
+        font-size: 30px; 
+    }
+    .contact-us p{
+        font-size: 18px; 
+    }
+    .contact-form-1-text h4{
+        font-size: 25px;
+    }
+    .contact-form-1-text p{
+        font-size: 18px;
+    }
+    
+    .contact-form-1 .form button{
+        min-width: 200px;
+    }
+    #message{
+        height: 150px;
+    }
+    .join-us-option p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){ /* col-xs */
+   .contact-form-1-text{
+    line-height: 11px;
+   }
+}
+
+/* Contact us*/
+
+/* service page  */
+
+.web-services-page-box{
+}
+.black-opicty{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.box-1{
+  width:278px;
+}
+.box-2{
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.box-2 p{
+  font-family: Century Gothic, Arial;
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.box-2 a{
+    text-decoration: none;
+  }
+.box-1 img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 768px){ /* col-sm */
+.web-services-page-box{
+  width: 180px;
+  }
+  .box-1{
+  height: 140px;
+  width:180px;
+  }
+}
+@media screen and (min-width: 992px){ /* col-md */
+.web-services-page-box{
+  width: 220px;
+  }
+.box-1{
+  width:220px;
+  height: 180px;
+  }
+}
+@media screen and (min-width: 1200px){ /* col-lg */
+.web-services-page-box{
+  width: 240px;
+  }
+  .box-1{
+  width:240px;
+  height: 200px;
+  }
+}
+@media screen and (max-width: 768px){ /* col-xs */
+  .web-services-page-box{
+  width: 150px;
+  }
+  .box-1{
+  width:150px;
+  height: 110px;
+  }
+}
+/* service page  */
+
+
+/* 3d visualsation */
+
+.service-box img{
+    width: 90%;
+    height: 100%;
+}
+.img-opacity{
+  opacity: 0.3;
+}
+.service-box-vr h1{
+    color: #fff;
+}
+.service-box-ar p{
+  color: #fff;
+  text-align: right;
+  font-size: 60px;
+  padding-right: 150px;
+}
+.service-box-vr p{
+  color: #fff;
+  font-size: 60px;
+  text-align: left;
+  padding-top: 4.7%;
+  padding-left: 100px;
+}
+.ar-description{
+  position: absolute;
+  top: 1%;
+  color: #fff;
+}
+.ar-description h3{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.ar-description p{
+   color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.ar-description{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.description-img{
+  position:absolute;
+  top: 40%;
+}
+.description-img img{
+  width: 50%;
+}
+.mexres-img{
+  text-align: right;
+  padding-top: 10%;
+}
+.ar-description h3{
+  font-weight: bold;
+}
+.service-box-portfolio-img{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+.portfolio-img{
+  width: 35%;
+  padding-bottom: 2%;
+  max-height: 160px;
+}
+.portfolio-img img{
+  width: 100%;
+  height: 100%;
+}
+.portfolio-download-left img{
+  width: 150px;
+  float: right;
+  height: 35px;
+}
+.portfolio-download-right img{
+  width: 150px;
+   height: 50px;
+   float: left;
+}
+@media screen and (min-width: 1200px){ /* col-lg */
+  .ar-description h3{
+    font-size: 30px;
+  }
+  .ar-description p{
+    font-size: 18px;
+  }
+    .description-img{
+  top: 40%;
+}
+}
+@media screen and (max-width: 768px){ /* col-xs */
+  .description-img{
+  top: 90%;
+}
+.description-img img{
+  width: 50%;
+  opacity: 0.3;
+}
+}
+@media screen and (min-width: 768px){ /* col-xs */
+  .description-img{
+  top: 60%;
+}
+  }
+
+
+/* 3d visualsation*/
+
+/* Web development */
+
+.web-design-title h3{
+  font-weight: bold;
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.thumbnail-1{
+  width: 75%;
+  margin-left: 10%;
+  border-radius: 0px;
+  background-color: rgba(192,192,192,0.6);
+  border: none;
+}
+.caption p{
+  color: black;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+
+}
+.thumbnail-1 a{
+  text-decoration: none;
+}
+.thumbnail-2 img{
+  width: 40%;
+  margin-left: 20%;
+}
+.thumbnail-2{
+  border: 0px;
+  background-color: transparent;
+      /* background-color: #fff; */
+}
+.caption img{
+}
+.moible-app-download-left{
+  background-color: green;
+}
+.moible-app-download-left img{
+  width: 30%;
+  float:  left;
+}
+.moible-app-download-right{
+  background-color: red;
+}
+.moible-app-download-right img{
+  width: 30%;
+  float:  right;
+}
+
+/* Web development */
+
+/* Software development */
+
+.web-design-title h3{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.munzili-logo img{
+  width: 80%;
+}
+.munzili-logo{
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.munzili-logo-text p{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+  padding-bottom: 30px;
+}
+.munzili-logo-text{
+  padding-top: 10%;
+}
+.vr-space img{
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.vr-space-des p{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+  padding-bottom: 30px;
+}
+.vr-space-des-logo img{
+  width: 50%;
+  margin-left: 40%;
+}
+.software-arlogd img{
+  width: 50%;
+}
+.software-arlogd{
+  margin-left: 30%;
+  margin-top: 15%;
+}
+.vr-space-position{
+  position: absolute;
+  top: 25%;
+}
+.vr-space h3{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+  font-weight: bold;
+}
+.software-box{
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.software-box img{
+  width: 80%;
+}
+.software-box p{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+@media screen and (min-width: 1200px){ /* col-lg */
+  .web-design-title h3{
+    font-size: 30px;
+  }
+  .munzili-logo-text p{
+    font-size: 18px;
+  }
+  .munzili-logo-text{
+  padding-top: 20%;
+}
+.munzili-logo-text p{
+  padding-bottom: 50px;
+}
+.vr-space-des{
+  padding-top: 5%;
+}
+.vr-space-des p{
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+.software-box p{
+  font-size: 18px;
+  padding-top: 5%;
+  padding-bottom: 50px;
+}
+
+
+}
+
+
+/* Software development */
+
+/* game development */
+
+.game-design-background img{
+  position: absolute;
+  width: 100%;
+  height: 75%;
+}
+.game-design-text h3{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+  font-weight: bold;
+}
+.game-design-text p{
+  color: #fff;
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+.game-design-box{
+  padding-top: 15%;
+  padding-left: 10%;
+}
+.game-design-box img{
+  width: 60%;
+}
+.download-button-game{
+  padding-top: 70%;
+  padding-left: 20%;
+}
+.download-button-game img{
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px){ /* col-lg */
+.game-design-text p{
+font-size: 18px;
+
+}
+.game-design-text h3{
+ font-size: 30px;
+}
+
+}
+/* game development */
+
+
+
+/* media */
+
+.container {
+    margin-top: 20px;
+}
+
+/* Carousel Styles */
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-image: none;
+  background-repeat: no-repeat;
+  text-shadow: none;
+}
+
+.carousel-control.left span {
+  padding: 15px;
+}
+
+.carousel-control.right span {
+  padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+  position: absolute;
+  top: 45%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+  left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+  right: 0;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+  background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+}
+
+/* Carousel Header Styles */
+.news {
+    position: absolute;
+    top: 15%;
+    left: -35%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+.header-text {
+    position: absolute;
+    top: 30%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+.news h2{
+  font-family: Century Gothic, Arial;
+  font-style: italic;
+
+font-weight: bold;
+}
+.header-text h2 {
+    font-size: -22px;
+    font-family: Century Gothic, Arial;
+  font-style: italic;
+}
+
+
+.carousel-control.left span, .carousel-control.right span {
+   background-color: rgba(0,0,0,0);
+}
+
+/* media */
+
+/*
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+*/
