@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  	<link rel="stylesheet" type="text/css" href="css/owl.carousel.theme.csss">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<style type="text/css">
@@ -50,6 +52,13 @@
 		background-color: rgba(0,0,0,0);
 		border: 0;
 	}
+	#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  height: auto;
+}
 	</style>
 </head>
 
@@ -196,6 +205,7 @@
 									        <div class="carousel-caption">
 									          <h3>Los Angeles</h3>
 									          <p>LA is always so much fun!</p>
+									          <a href="" class="btn btn-primary">Button dxaxa</a>
 									        </div>
 									    </div>
 
@@ -204,6 +214,7 @@
 									        <div class="carousel-caption">
 									          <h3>Los Angeles</h3>
 									          <p>LA is always so much fun!</p>
+									          <a href="" class="btn btn-primary">Button dxaxa</a>
 									        </div>
 									    </div>
 
@@ -212,6 +223,7 @@
 									        <div class="carousel-caption">
 									          <h3>Los Angeles</h3>
 									          <p>LA is always so much fun!</p>
+									          <a href="" class="btn btn-primary">Button dxaxa</a>
 									        </div>
 									    </div>
 
@@ -220,6 +232,7 @@
 									        <div class="carousel-caption">
 									          <h3>Los Angeles</h3>
 									          <p>LA is always so much fun!</p>
+									          <a href="" class="btn btn-primary">Button dxaxa</a>
 									        </div>
 									    </div>
 
@@ -236,6 +249,7 @@
 									        <div class="carousel-caption">
 									          <h3>Los Angeles</h3>
 									          <p>LA is always so much fun!</p>
+									          <a href="" class="btn btn-primary">Button dxaxa</a>
 									        </div>
 									    </div>
 
@@ -260,33 +274,21 @@
                 </div><!--/Slider-->
 
                 <div class="row hidden-xs" id="slider-thumbs">
+                	<div id="owl-demo">
                         <!-- Bottom switcher of slider -->
-                        <ul class="hide-bullets">
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
-                            </li>
+							<div class="item" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>   
+							<div class="item" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
-                            </li>
+							<div class="item" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
+							<div class="item" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=one" class="img-responsive"></div>  
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
-                            </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-                            </li>
-
-                        </ul>                 
+                    </div>           
                 </div>
         </div>
 </div>
@@ -299,6 +301,22 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 6,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+</script>
 <script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -354,5 +372,6 @@
         });
 });
 	</script>
+
 </html>
 
